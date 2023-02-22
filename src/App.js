@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/airbym.css";
 
-function App() {
+// component
+import Nav from "./component/Nav";
+import Hero from "./component/Hero";
+import Main from "./component/Main";
+import Footer from "./component/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Nav />
+      <Hero />
+      <Main />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
